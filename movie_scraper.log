@@ -1,0 +1,65 @@
+INFO:root:Code started running at 2023-04-03 23:32:20
+INFO:root:Page 1 completed
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/ACcf747aac8a00c40c4337cd9811840373/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/7.17.0 (Windows AMD64) Python/3.9.13
+INFO:twilio.http_client:X-Twilio-Client : python-7.17.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 03 Apr 2023 22:35:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '843', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQaebd1484a8499abe93dd601bafd81e6a', 'Twilio-Request-Duration': '0.094', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000'}
+INFO:root:Code started running at 2023-04-05 01:13:06
+INFO:root:Page 1 completed
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/ACcf747aac8a00c40c4337cd9811840373/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/7.17.0 (Windows AMD64) Python/3.9.13
+INFO:twilio.http_client:X-Twilio-Client : python-7.17.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Wed, 05 Apr 2023 00:22:22 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '843', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ0aefb08806562e94f8419f02bed2b3d4', 'Twilio-Request-Duration': '0.094', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000'}
+INFO:root:Code started running at 2023-04-07 22:15:45
+CRITICAL:imdbpy:IMDbDataAccessError exception raised; args: ({'errcode': None, 'errmsg': 'None', 'url': 'https://www.imdb.com/find/?q=The+Portable+Door&s=tt', 'proxy': '', 'exception type': 'IOError', 'original exception': TimeoutError('The read operation timed out')},); kwds: {}
+Traceback (most recent call last):
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\site-packages\imdb\parser\http\__init__.py", line 233, in retrieve_unicode
+    response = uopener.open(url)
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\urllib\request.py", line 1352, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\http\client.py", line 1374, in getresponse
+    response.begin()
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\ssl.py", line 1278, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\anaconda3\envs\recomendation\Lib\ssl.py", line 1134, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
